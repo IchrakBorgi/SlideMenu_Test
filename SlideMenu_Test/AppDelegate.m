@@ -7,12 +7,31 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainViewController.h"
+#import "SideBarViewController.h"
 @implementation AppDelegate
-
+//@synthesize viewController ;
+//@synthesize window;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+   /* viewController = [[MainViewController alloc] init];
+	SideBarViewController *rearViewController = [[SideBarViewController alloc] init];
+    
+    
+	UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:rearViewController];
+	
+	SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationController frontViewController:frontNavigationController];
+    revealController.delegate = self;
+    
+    //revealController.bounceBackOnOverdraw=NO;
+    //revealController.stableDragOnOverdraw=YES;
+    
+	//self.viewController = revealController;
+	
+	self.window.rootViewController = self.viewController;
+	[self.window makeKeyAndVisible]; */   // Override point for customization after application launch.
     return YES;
 }
 							

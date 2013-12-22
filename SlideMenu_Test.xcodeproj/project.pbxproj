@@ -21,6 +21,12 @@
 		C82A96811864519000681E5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82A96631864519000681E5B /* UIKit.framework */; };
 		C82A96891864519000681E5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C82A96871864519000681E5B /* InfoPlist.strings */; };
 		C82A968B1864519000681E5B /* SlideMenu_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A968A1864519000681E5B /* SlideMenu_TestTests.m */; };
+		C82A96961864523000681E5B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A96951864523000681E5B /* SWRevealViewController.m */; };
+		C82A969A1864537600681E5B /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C82A96981864537600681E5B /* menu.png */; };
+		C82A969B1864537600681E5B /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82A96991864537600681E5B /* menu@2x.png */; };
+		C82A96A1186454DA00681E5B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A969F186454DA00681E5B /* MainViewController.m */; };
+		C82A96A2186454DA00681E5B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C82A96A0186454DA00681E5B /* MainViewController.xib */; };
+		C82A96AB1864585100681E5B /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A96AA1864585100681E5B /* SideBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		C82A96861864519000681E5B /* SlideMenu_TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideMenu_TestTests-Info.plist"; sourceTree = "<group>"; };
 		C82A96881864519000681E5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C82A968A1864519000681E5B /* SlideMenu_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenu_TestTests.m; sourceTree = "<group>"; };
+		C82A96941864523000681E5B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C82A96951864523000681E5B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C82A96981864537600681E5B /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		C82A96991864537600681E5B /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		C82A969E186454DA00681E5B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C82A969F186454DA00681E5B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C82A96A0186454DA00681E5B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		C82A96A91864585100681E5B /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
+		C82A96AA1864585100681E5B /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,10 @@
 		C82A96651864519000681E5B /* SlideMenu_Test */ = {
 			isa = PBXGroup;
 			children = (
+				C82A96A31864580200681E5B /* SideBarViewController */,
+				C82A969D186454C600681E5B /* MainViewController */,
+				C82A969C1864537900681E5B /* Images */,
+				C82A96971864523400681E5B /* SWRevealViewController */,
 				C82A966E1864519000681E5B /* AppDelegate.h */,
 				C82A966F1864519000681E5B /* AppDelegate.m */,
 				C82A96711864519000681E5B /* Main.storyboard */,
@@ -150,6 +169,43 @@
 				C82A96871864519000681E5B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C82A96971864523400681E5B /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C82A96941864523000681E5B /* SWRevealViewController.h */,
+				C82A96951864523000681E5B /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		C82A969C1864537900681E5B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C82A96981864537600681E5B /* menu.png */,
+				C82A96991864537600681E5B /* menu@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C82A969D186454C600681E5B /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C82A969E186454DA00681E5B /* MainViewController.h */,
+				C82A969F186454DA00681E5B /* MainViewController.m */,
+				C82A96A0186454DA00681E5B /* MainViewController.xib */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		C82A96A31864580200681E5B /* SideBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C82A96A91864585100681E5B /* SideBarViewController.h */,
+				C82A96AA1864585100681E5B /* SideBarViewController.m */,
+			);
+			name = SideBarViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82A969A1864537600681E5B /* menu.png in Resources */,
+				C82A96A2186454DA00681E5B /* MainViewController.xib in Resources */,
 				C82A96781864519000681E5B /* Images.xcassets in Resources */,
+				C82A969B1864537600681E5B /* menu@2x.png in Resources */,
 				C82A966A1864519000681E5B /* InfoPlist.strings in Resources */,
 				C82A96731864519000681E5B /* Main.storyboard in Resources */,
 			);
@@ -252,6 +311,9 @@
 				C82A96761864519000681E5B /* ViewController.m in Sources */,
 				C82A96701864519000681E5B /* AppDelegate.m in Sources */,
 				C82A966C1864519000681E5B /* main.m in Sources */,
+				C82A96AB1864585100681E5B /* SideBarViewController.m in Sources */,
+				C82A96A1186454DA00681E5B /* MainViewController.m in Sources */,
+				C82A96961864523000681E5B /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +522,7 @@
 				C82A96901864519000681E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C82A96911864519000681E5B /* Build configuration list for PBXNativeTarget "SlideMenu_TestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +531,7 @@
 				C82A96931864519000681E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
